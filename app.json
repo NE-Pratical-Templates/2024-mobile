@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "post-maker",
-    "slug": "post-maker",
+    "name": "postStack",
+    "slug": "postStack",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "post-maker",
+    "scheme": "postStack",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.post-maker"
+      "package": "com.anonymous.postStack"
     },
     "web": {
       "bundler": "metro",

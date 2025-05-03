@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+Here is the updated `README.md` file with **developer credit** added:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+````markdown
+# PostStack
 
-1. Install dependencies
+PostStack is a simple React Native + Expo application that interacts with mock data from [JSONPlaceholder](https://jsonplaceholder.typicode.com). It demonstrates how to build a basic post management system where users can:
+
+- View a list of posts
+- Read detailed information about each post, including comments
+- Create a new post by selecting a user and submitting a title and body
+
+## Features
+
+- 📰 List of posts
+- 👀 Post details with full body text and image
+- 💬 Comments under each post
+- ✍️ Create a new post via a simple form
+- 🔄 Data is fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com)
+
+## Screenshots
+
+### 🏠 Home - List of Posts
+
+<img src="./Screenshot From 2025-05-03 08-38-53.png" alt="Post List" width="300"/>
+
+### 📄 Post Detail Page
+
+<img src="./Screenshot From 2025-05-03 08-38-59.png" alt="Post Detail" width="300"/>
+
+### ➕ Create New Post
+
+<img src="./Screenshot From 2025-05-03 08-39-09.png" alt="Create Post" width="300"/>
+
+## Tech Stack
+
+- ⚛️ React Native
+- 🚀 Expo
+- 🧪 Axios for HTTP requests
+- 💻 Mock API: [JSONPlaceholder](https://jsonplaceholder.typicode.com)
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/poststack.git
+   cd postStack
+   ```
+````
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the Expo server:
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run the app on your simulator or mobile device using the QR code.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Notes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- This app is for demo purposes and uses mocked backend data.
+- Error boundaries or error handling (e.g., "Possible unhandled promise rejection") should be addressed in production apps.
 
-## Get a fresh project
+## Developer
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built with 🤝 by **Jodos**
