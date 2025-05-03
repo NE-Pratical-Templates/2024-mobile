@@ -23,15 +23,15 @@ PostStack is a simple React Native + Expo application that interacts with mock d
 
 ### 🏠 Home - List of Posts
 
-<img src="./Screenshot From 2025-05-03 08-38-53.png" alt="Post List" width="300"/>
+<img src="./assets/images/posts.png" alt="Post List" width="300"/>
 
 ### 📄 Post Detail Page
 
-<img src="./Screenshot From 2025-05-03 08-38-59.png" alt="Post Detail" width="300"/>
+<img src="./assets/images/postDetails.png" alt="Post Detail" width="300"/>
 
 ### ➕ Create New Post
 
-<img src="./Screenshot From 2025-05-03 08-39-09.png" alt="Create Post" width="300"/>
+<img src="./assets/images/createPost.png" alt="Create Post" width="300"/>
 
 ## Tech Stack
 
