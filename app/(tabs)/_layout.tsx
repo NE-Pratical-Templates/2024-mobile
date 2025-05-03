@@ -21,9 +21,7 @@ const TabIcon = ({
       <Type size={30} name={icon} color="#33363F" />
 
       <Text
-        className={`${
-          focused ? "font-bold" : "font-normal"
-        } text-lg`}
+        className={`${focused ? "font-bold" : "font-normal"} text-lg`}
         style={{ color: color }}
       >
         {name}

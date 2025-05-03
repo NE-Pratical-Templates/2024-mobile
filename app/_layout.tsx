@@ -4,7 +4,7 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { ToastProvider } from "react-native-toast-notifications";
 import { CustomToast } from "@/components/Custom-Toast";
-import { useFonts } from 'expo-font';
+import { useFonts } from "expo-font";
 import {
   DarkTheme,
   DefaultTheme,

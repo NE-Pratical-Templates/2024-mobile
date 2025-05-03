@@ -1,22 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{tsx,jsx,js,ts}",
-    "./components/**/*.{tsx,jsx,js,ts}",
-  ],
+  content: ["./app/**/*.{tsx,jsx,js,ts}", "./components/**/*.{tsx,jsx,js,ts}"],
   theme: {
     extend: {
       fontFamily: {
-        rubik: ['Rubik', 'sans-serif'],
-        rubiksemibold: ['RubikSemibold', 'sans-serif'],
-        rubikmedium: ['RubikMedium', 'sans-serif'],
-        rubikbold: ['RubikBold', 'sans-serif'],
+        rubik: ["Rubik", "sans-serif"],
+        rubiksemibold: ["RubikSemibold", "sans-serif"],
+        rubikmedium: ["RubikMedium", "sans-serif"],
+        rubikbold: ["RubikBold", "sans-serif"],
       },
-      colors:{
-        "primary":"#1967D2"
-      }
+      colors: {
+        primary: "#1967D2",
+      },
     },
   },
   plugins: [],
-}
-
+};
