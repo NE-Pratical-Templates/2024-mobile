@@ -19,20 +19,6 @@ PostStack is a simple React Native + Expo application that interacts with mock d
 - ✍️ Create a new post via a simple form
 - 🔄 Data is fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com)
 
-## Screenshots
-
-### 🏠 Home - List of Posts
-
-<img src="./assets/images/posts.png" alt="Post List" width="300"/>
-
-### 📄 Post Detail Page
-
-<img src="./assets/images/postDetails.png" alt="Post Detail" width="300"/>
-
-### ➕ Create New Post
-
-<img src="./assets/images/createPost.png" alt="Create Post" width="300"/>
-
 ## Tech Stack
 
 - ⚛️ React Native
