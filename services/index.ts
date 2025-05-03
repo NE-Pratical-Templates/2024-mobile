@@ -1,6 +1,7 @@
 import api from "@/lib/axios-config";
-import { IComment, IPost, IUser } from "@/types";
+import { IComment, ICreatePostData, IPost, IUser } from "@/types";
 import { router } from "expo-router";
+import { UseFormReset } from "react-hook-form";
 import { ToastType } from "react-native-toast-notifications";
 export const fetchPosts = async ({
   toast,
@@ -109,6 +110,67 @@ export const fetchPostData = async ({
   } catch (error) {
     console.log(error);
     return toast.show("Error fetching post data", {
+      type: "danger",
+      placement: "top",
+    });
+  } finally {
+    setLoading(false);
+  }
+};
+
+export const fetchUsers = async ({
+  setLoading,
+  toast,
+  setUsers,
+}: {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  toast: ToastType;
+  setUsers: React.Dispatch<React.SetStateAction<IUser[]>>;
+}) => {
+  try {
+    setLoading(true);
+    const url = "/users";
+    const response = await api.get(url);
+    setUsers(response.data);
+  } catch (error) {
+    console.log(error);
+    return toast.show("Error fetching users", {
+      type: "danger",
+      placement: "top",
+    });
+  } finally {
+    setLoading(false);
+  }
+};
+
+export const createPost = async ({
+  setLoading,
+  data,
+  toast,
+  reset,
+  setSelectedUser,
+}: {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  data: ICreatePostData;
+  toast: ToastType;
+  reset: UseFormReset<ICreatePostData>;
+  setSelectedUser: React.Dispatch<React.SetStateAction<number | null>>;
+}) => {
+  try {
+    setLoading(true);
+    const url = "/posts";
+    await api.post(url, data);
+    toast.show("Post created successfully", {
+      type: "success",
+      placement: "top",
+    });
+    setLoading(false);
+    reset();
+    setSelectedUser(null);
+    router.push("/(tabs)");
+  } catch (error: any) {
+    console.log(error);
+    return toast.show("Error creating post", {
       type: "danger",
       placement: "top",
     });

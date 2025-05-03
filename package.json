@@ -17,8 +17,10 @@
   "dependencies": {
     "@expo/cli": "^0.18.30",
     "@expo/vector-icons": "^14.0.2",
+    "@hookform/resolvers": "^5.0.1",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-community/geolocation": "^3.4.0",
+    "@react-native-picker/picker": "^2.11.0",
     "@react-native-vector-icons/fontawesome": "^4.7.0-alpha.25",
     "@react-navigation/native": "^6.0.2",
     "@stripe/stripe-react-native": "0.37.2",
@@ -36,6 +38,7 @@
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.56.1",
     "react-native": "0.74.5",
     "react-native-app-intro-slider": "^4.0.4",
     "react-native-maps": "1.14.0",
@@ -46,6 +49,7 @@
     "react-native-toast-notifications": "^3.4.0",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.10",
+    "yup": "^1.6.1",
     "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {
