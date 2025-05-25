@@ -43,7 +43,6 @@ function PostScreen() {
   useEffect(() => {
     getPostData();
   }, []);
-
   // each comment
   const renderComment = ({ item }: { item: IComment }) => (
     <View className="w-full bg-gray-300 p-3 my-2 rounded-lg">
@@ -61,12 +60,20 @@ function PostScreen() {
         >
           <AntDesign name="arrowleft" size={24} color="white" />
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={removePost}
-          className="mr-4 bg-red-600 rounded-full w-10 h-10 flex items-center justify-center"
-        >
-          <AntDesign name="delete" size={24} color="white" />
-        </TouchableOpacity>
+        <View className="flex flex-row items-center">
+          <TouchableOpacity
+            onPress={() => router.push(`/post/edit/${id}`)}
+            className="mr-4 bg-blue-600 rounded-full w-10 h-10 flex items-center justify-center"
+          >
+            <AntDesign name="edit" size={24} color="white" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={removePost}
+            className="mr-4 bg-red-600 rounded-full w-10 h-10 flex items-center justify-center"
+          >
+            <AntDesign name="delete" size={24} color="white" />
+          </TouchableOpacity>
+        </View>
       </View>
       <Text className="text-lg my-4 font-semibold">{post?.title}</Text>
       <Text className="mb-4 italic text-slate-700">Written By: John Doe</Text>

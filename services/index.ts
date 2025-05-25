@@ -1,5 +1,5 @@
 import api from "@/lib/axios-config";
-import { IComment, ICreatePostData, IPost, IUser } from "@/types";
+import { IComment, ICreatePostData, IPost, IUpdatePostData, IUser } from "@/types";
 import { router } from "expo-router";
 import { UseFormReset } from "react-hook-form";
 import { ToastType } from "react-native-toast-notifications";
@@ -169,6 +169,42 @@ export const createPost = async ({
     setSelectedUser(null);
     router.push("/(tabs)");
   } catch (error: any) {
+    console.log(error);
+    return toast.show("Error creating post", {
+      type: "danger",
+      placement: "top",
+    });
+  } finally {
+    setLoading(false);
+  }
+};
+
+export const updatePost = async ({
+  postId,
+  setLoading,
+  data,
+  toast,
+  reset,
+}: {
+  postId: number;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  data: IUpdatePostData;
+  toast: ToastType;
+  reset: UseFormReset<IUpdatePostData>;
+}) => {
+  try {
+
+    setLoading(true);
+    const url = "/posts";
+    await api.put(`${url}/${postId}`, data);
+    toast.show("Post updated successfully", {
+      type: "success",
+      placement: "top",
+    });
+    setLoading(false);
+    reset();
+    router.push("/(tabs)")
+  } catch (error) {
     console.log(error);
     return toast.show("Error creating post", {
       type: "danger",

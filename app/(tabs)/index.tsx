@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 import { FlatList, Image, RefreshControl, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useToast } from "react-native-toast-notifications";
-
 function Home() {
   const [loading, setLoading] = useState<boolean>(false);
   const [posts, setPosts] = useState<IPost[]>([]);

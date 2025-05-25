@@ -42,6 +42,12 @@ export interface ICreatePostData {
   title: string
   body: string
 }
+export interface IUpdatePostData {
+  userId: number
+  postId:number
+  title: string
+  body: string
+}
 
 export interface IUser {
   id: number
